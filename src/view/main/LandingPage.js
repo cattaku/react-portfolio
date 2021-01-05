@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { withRouter } from 'react-router-dom'; 
 
 function LandingPage() {
     return (
         <div>
-            <h3 style={{color:'#000'}}>안녕하세요</h3>
+            <h3>안녕하세요</h3>
         </div>
     )
 }
 
-export default LandingPage
+export default withRouter(LandingPage)
