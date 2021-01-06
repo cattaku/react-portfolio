@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'; 
 import "./main.css"
 import Typist from 'react-typist'
 
@@ -30,4 +31,4 @@ function AboutPage() {
     )
 }
 
-export default AboutPage
+export default withRouter (AboutPage)
