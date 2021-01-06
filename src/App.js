@@ -3,7 +3,7 @@ import { Switch,Route } from "react-router-dom";
 
 import NavBar from './components/views/nav/NavBar'
 import LandingPage from "./components/views/LanddingPage"
-import AboutPage from "./components/views/AboutPage"
+
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
-        <Route exact path="/" component = {LandingPage} />
-        <Route exact path="/about" component = { AboutPage } />
+        <Route exact path="/react-portfolio" component = {LandingPage} />
+       
       </Switch>
     </div>
 

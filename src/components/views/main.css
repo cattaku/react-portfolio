@@ -1,7 +1,6 @@
 
 body{
-    background: #1d1d1d;
-    overflow: hidden;
+    background: #1d1d1d;    
     display: block;
     max-width: 100%;
 }
@@ -14,8 +13,10 @@ nav ul li{
     padding:0 10px;
 }
 .main { width: 100%; 
-        height: auto;position: relative;} 
-.mainImg {  width: 100%;margin:0; opacity: 0.4;}
+        height: auto;position: relative;overflow: hidden;} 
+.mainImg { width:100%;height: auto; margin:0; opacity: 0.4;}
+.MyTypist { width: 100%; 
+    height: auto; }
 .typist { position: absolute; top:15%;font-size:4rem;font-weight:700;padding: 3rem;align-content: center;
 list-style: none;}
 .hello { color:#FE2E64;}
@@ -23,7 +24,7 @@ list-style: none;}
 .web{color:#fff;}
 
 
-.section2 {margin-top: 10%;overflow: hidden;box-sizing: border-box;font-family:file-blod;}
+.section2 {margin-top: 10%;box-sizing: border-box;font-family:file-blod;}
 
 .arti1 { width:40%;height:300px;float:left;box-sizing: border-box;color:#fff;text-align:center;}
 .arti2 {width:60%;height:300px;float:right;align-content:center;padding:3rem;box-sizing:border-box;color:#fff;}

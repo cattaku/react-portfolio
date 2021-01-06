@@ -15,12 +15,12 @@ function NavBar() {
             <div className="menu_container">
                 <ul>
                     <li>
-                        <a href="/">
+                        <a href="/react-portfolio">
                             <HomeOutlined style={{color:'#01DFD7', fontSize:'1.5rem', lineWidth:'0.1rem'}}/>
                         </a>
                     </li>
                     <li> 
-                        <a href="/about">
+                        <a href="#aboutContainer">
                             <UserOutlined style={{color:'#01DFD7', fontSize:'1.5rem'}}/>
                     </a>
                     </li>
