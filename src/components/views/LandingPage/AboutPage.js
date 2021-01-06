@@ -1,32 +1,15 @@
-import React, { useState, useEffect} from 'react';
+import React from 'react'
 import { withRouter } from 'react-router-dom'; 
 import "./main.css"
-import  MainImage  from '../../resources/images/1600_844.jpg'
 import Typist from 'react-typist'
 
-function LandingPage() {
+
+function AboutPage() {
 
     const [typingDone, setTypingDone] = React.useState(false);
 
-    return (
-        <div>
-
-            <section className="main">
-                <img className="mainImg" src={MainImage}/>
-                <div  className="MyTypist">
-                <Typist cursor={{ show: true, blink: true, element: '|', hideWhenDone: false, hideWhenDoneDelay: 1000,}}
-                avgTypingDelay={200} onTypingDone={() => setTypingDone(true)}>
-                    <ul className="typist">
-                        <li className="hello">Hello,</li>
-                        <li className="sooah">I'm Sooah,</li>
-                        <li className="web">web developer.</li>     
-                    </ul>
-                </Typist>
-                </div>
-            </section>
-
-            <div className="about-container" name="aboutContainer">
-            <section class="section2">
+    return (      
+        <section class="section2">
             <article class="arti1">
             <Typist cursor={{ show: true, blink: true, hideWhenDone: false, hideWhenDoneDelay: 1000,}}
                 avgTypingDelay={200} onTypingDone={() => setTypingDone(true)}>
@@ -41,12 +24,9 @@ function LandingPage() {
                     늦게만큼 열심히 노력해서 오래도록 현업에서 일을 할 수 있는 개발자로 남고 싶습니다.
                 </p> 
             </article>
-            </section>
+        </section>
             
-        </div>
-        </div>
-
     )
 }
 
-export default withRouter(LandingPage)
+export default withRouter (AboutPage)

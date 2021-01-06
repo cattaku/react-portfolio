@@ -1,5 +1,3 @@
-
-import { Menu } from 'antd'
 import { HomeOutlined, 
          MailOutlined,   
          UserOutlined, 
@@ -10,7 +8,6 @@ import { HomeOutlined,
 function NavBar() {
 
     return (
-
         <nav className="menu">
             <div className="menu_container">
                 <ul>
@@ -25,12 +22,12 @@ function NavBar() {
                     </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="#skillContainer">
                             <SettingOutlined style={{color:'#01DFD7', fontSize:'1.5rem'}}/>
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="#projectContainer">
                             <ProjectOutlined style={{color:'#01DFD7', fontSize:'1.5rem'}}/>
                         </a>
                     </li>
@@ -40,9 +37,9 @@ function NavBar() {
                          </a>
                     </li>            
                 </ul>
-
             </div>
-        </nav>
+            </nav>
+
     )
 }
 
