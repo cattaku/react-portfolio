@@ -16,7 +16,8 @@ nav ul li { width:40px; display: inline;color:#fff;font:bold 1.5rem Hack;float:l
 .web{color:#fff;}
 
 /* about me */
-.section2 { display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;height:600px;margin-top:10%;
+.about-container { width:100%;height: 600px; display: flex;flex-direction: column;justify-content: center;}
+.section2 { width:70%;display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;margin:10% 10% 10% 15%;
     box-sizing:border-box;font-family:file-blod;}
 .arti1 { flex:30%;height:auto;box-sizing:border-box;color:#fff;text-align:center;}
 .arti2 { flex:70%;height:auto;align-content:center;padding:3rem;box-sizing:border-box;color:#fff;}
@@ -24,7 +25,7 @@ nav ul li { width:40px; display: inline;color:#fff;font:bold 1.5rem Hack;float:l
 .arti2 p {margin-top: 4rem;font-size: 1rem;}
 
 /* skill */
-.skill-container { display: flex; flex-direction: column;justify-content:center;margin-top: 10%;margin-bottom:10%; box-sizing: border-box; color:white}
+.skill-container { width:100%;height:700px; display: flex; flex-direction: column;justify-content:center;margin-top: 10%;margin-bottom:10%; box-sizing: border-box; color:white}
 .skill_flex { align-content:center;display:flex;flex-direction:column;justify-content:center;width:70%;height: auto;
     margin-left:15%; color: #fff;}
 .skill_header { font-size:3rem;text-align:center;height: 100px;margin-bottom:50px;}
@@ -36,7 +37,7 @@ nav ul li { width:40px; display: inline;color:#fff;font:bold 1.5rem Hack;float:l
 .level { flex:5%;font-size: 0.8rem;height:20px;text-align:center;}
 
 /* Project */
-.project-container { display:flex;flex-direction:column;justify-content:center;margin-top:10%;margin-bottom:10%; }
+.project-container { width:100%;height:600px; display:flex;flex-direction:column;justify-content:center;margin-top:10%;margin-bottom:10%; }
 .project-flex { display:flex;flex-direction:column;justify-content:center;width:70%;color:#FFF;margin-left:15%;}
 .project-header { font-size:3rem;text-align:center;height: 100px;margin-bottom:50px; }
 .project-flex-row { display:flex;flex-direction:row;justify-content:center;margin: 5px 5px 10px 5px;}

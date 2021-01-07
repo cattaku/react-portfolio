@@ -1,5 +1,5 @@
 import { HomeOutlined, 
-         MailOutlined,   
+         GithubOutlined,   
          UserOutlined, 
          SettingOutlined, 
          ProjectOutlined } from '@ant-design/icons'
@@ -33,8 +33,8 @@ function NavBar() {
                         </a>
                     </li>
                     <li>
-                        <a href="/">
-                            <MailOutlined style={{color:'#01DFD7', fontSize:'1.5rem'}}/>
+                        <a href="https://github.com/cattaku" target="_blank">
+                            <GithubOutlined style={{color:'#01DFD7', fontSize:'1.5rem'}}/>
                          </a>
                     </li>            
                 </ul>

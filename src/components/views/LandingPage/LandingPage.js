@@ -19,7 +19,6 @@ function LandingPage() {
             <header>
             <NavBar/>
             </header>
-
             <section className="main">
                 <img className="mainImg" src={MainImage}/>
                 <div  className="MyTypist">
@@ -47,10 +46,6 @@ function LandingPage() {
                 <ProjectPage/>
             </div>
             
-            {/* 이력서 PDF로 받을 수 있게 올리기 */}
-            <div>
-                <Footer/>
-            </div>
         </div>
 
     )
