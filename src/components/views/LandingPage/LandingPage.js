@@ -6,6 +6,8 @@ import Typist from 'react-typist'
 import NavBar from '../nav/NavBar'
 import AboutPage from './AboutPage'
 import Footer from '../footer/Footer';
+import SkillPage from './SkillPage';
+import ProjectPage  from './ProjectPage'
 
 
 function LandingPage() {
@@ -14,7 +16,9 @@ function LandingPage() {
 
     return (
         <div>
+            <header>
             <NavBar/>
+            </header>
 
             <section className="main">
                 <img className="mainImg" src={MainImage}/>
@@ -32,25 +36,17 @@ function LandingPage() {
             </section>
 
             <div className="about-container" id="aboutContainer">
-            <AboutPage/>
+                <AboutPage/>
             </div>
             
             <div className="skill-container" id="skillContainer">
-                <section>
-
-                </section>
+                <SkillPage/>   
             </div>
             
             <div className="project-container" id="projectContainer">
-                <section>
-
-                </section>
+                <ProjectPage/>
             </div>
-            <div className="project-container" id="projectContainer">
-                <section>
-
-                </section>
-            </div>
+            
             {/* 이력서 PDF로 받을 수 있게 올리기 */}
             <div>
                 <Footer/>

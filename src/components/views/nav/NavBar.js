@@ -4,12 +4,13 @@ import { HomeOutlined,
          SettingOutlined, 
          ProjectOutlined } from '@ant-design/icons'
 
+import './nav.css'
 
 function NavBar() {
 
     return (
-        <nav className="menu">
-            <div className="menu_container">
+        <nav className="menu_container">
+            
                 <ul>
                     <li>
                         <a href="/react-portfolio">
@@ -37,7 +38,7 @@ function NavBar() {
                          </a>
                     </li>            
                 </ul>
-            </div>
+            
             </nav>
 
     )

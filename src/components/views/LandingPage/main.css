@@ -1,34 +1,47 @@
 
-body{
-    background: #1d1d1d;    
-    display: block;
-    max-width: 100%;
-    font-size: 0.5rem;
-}
-header { margin: 0;}
-nav { width: 30rem;height:4rem;float: right;align-content: center;}
-nav ul li{
-    display: inline;
-    color: #fff;
-    font:bold 1.5rem Hack; /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */ 
-    padding:0 10px;
-}
+body{ background: #1d1d1d;max-width:100%;font-size:16px;}
+/* Header & Nav */
+header { display:flex;width:100%;height:50px; margin:0;overflow:hidden;}
+.menu_container { width:100%;height:50px;margin:0;overflow:hidden;position:fixed;background:#1d1d1d;}
+nav ul { margin: 7px 10px 5px 80%;}
+nav ul li { width:40px; display: inline;color:#fff;font:bold 1.5rem Hack;float:left;}
 
-.main { width: 100%; 
-        height: auto;position: relative;overflow: hidden;} 
+/* Main */
+.main { width: 100%;height: auto;position: relative;overflow: hidden;} 
 .mainImg { width:100%;height: auto; margin:0;opacity:0.4;}
-.MyTypist { width: 100%; 
-    height: auto; }
-.typist { position: absolute; top:15%;font-size:4rem;font-weight:700;padding: 3rem;align-content: center;
-list-style: none;}
+.MyTypist { width: 100%;height: auto; }
+.typist { position: absolute; top:15%;font-size:4rem;font-weight:700;padding: 3rem;align-content: center;list-style: none;}
 .hello { color:#FE2E64;}
 .sooah {color:#fff;}    
 .web{color:#fff;}
 
 /* about me */
-
-.section2 { height: 600px; margin-top: 10%;box-sizing: border-box;font-family:file-blod;}
-.arti1 { width:40%;height:300px;float:left;box-sizing: border-box;color:#fff;text-align:center;}
-.arti2 {width:60%;height:300px;float:right;align-content:center;padding:3rem;box-sizing:border-box;color:#fff;}
+.section2 { display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;height:600px;margin-top:10%;
+    box-sizing:border-box;font-family:file-blod;}
+.arti1 { flex:30%;height:auto;box-sizing:border-box;color:#fff;text-align:center;}
+.arti2 { flex:70%;height:auto;align-content:center;padding:3rem;box-sizing:border-box;color:#fff;}
 .arti1 p {margin-top: 7rem;text-align:center;font-size: 3rem;}
 .arti2 p {margin-top: 4rem;font-size: 1rem;}
+
+/* skill */
+.skill-container { display: flex; flex-direction: column;justify-content:center;margin-top: 10%;margin-bottom:10%; box-sizing: border-box; color:white}
+.skill_flex { align-content:center;display:flex;flex-direction:column;justify-content:center;width:70%;height: auto;
+    margin-left:15%; color: #fff;}
+.skill_header { font-size:3rem;text-align:center;height: 100px;margin-bottom:50px;}
+.bar_flex { display: flex;flex-direction:row;justify-content:center;height: auto;padding:5px;}
+.skill_name { flex:13%;height:20px; font-size:0.8rem;font-weight:600;text-align: center ; background:#FE2E64;}
+.bar_fill { display: flex;flex-direction:row;width:100%;height:20px;color:#fff;background-color:#01DFD7;}
+.bar_fill div { flex:25%;border-right: 0.5px solid #000;}
+.skill_level { height:20px;background-color:#D8D8D8}
+.level { flex:5%;font-size: 0.8rem;height:20px;text-align:center;}
+
+/* Project */
+.project-container { display:flex;flex-direction:column;justify-content:center;margin-top:10%;margin-bottom:10%; }
+.project-flex { display:flex;flex-direction:column;justify-content:center;width:70%;color:#FFF;margin-left:15%;}
+.project-header { font-size:3rem;text-align:center;height: 100px;margin-bottom:50px; }
+.project-flex-row { display:flex;flex-direction:row;justify-content:center;margin: 5px 5px 10px 5px;}
+.project-image { flex:30%;padding-top:12px;}
+.project-content { flex:70%;}
+
+/* 기타 설정 */
+a { color:#FFF; text-decoration:none; }

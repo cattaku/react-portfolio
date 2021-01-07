@@ -11,8 +11,7 @@ function AboutPage() {
     return (      
         <section class="section2">
             <article class="arti1">
-            <Typist cursor={{ show: true, blink: true, hideWhenDone: false, hideWhenDoneDelay: 1000,}}
-                avgTypingDelay={200} onTypingDone={() => setTypingDone(true)}>
+            <Typist avgTypingDelay={200} onTypingDone={() => setTypingDone(true)}>
                 <p><span style={{color:'#FE2E64', fontWeight:'bold'}}>A</span>bout me</p>
             </Typist>
             </article>

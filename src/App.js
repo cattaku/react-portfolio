@@ -13,7 +13,7 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Switch>
-        {/* <Route exact path="/react-portfolio" component = {LandingPage} /> */}
+        {/* <Route exact path="/" component = {LandingPage} /> */}
         <Route exact path="/react-portfolio" component = {LandingPage} />
       </Switch>
     </div>
