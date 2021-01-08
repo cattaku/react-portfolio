@@ -21,26 +21,26 @@ nav ul li { width:40px; display: inline;color:#fff;font:bold 1.5rem Hack;float:l
     box-sizing:border-box;font-family:file-blod;}
 .arti1 { flex:30%;height:auto;box-sizing:border-box;color:#fff;text-align:center;}
 .arti2 { flex:70%;height:auto;align-content:center;padding:3rem;box-sizing:border-box;color:#fff;}
-.arti1 p {margin-top: 7rem;text-align:center;font-size: 3rem;}
-.arti2 p {margin-top: 4rem;font-size: 1rem;}
+.arti1 p { margin-top: 7rem;text-align:center;font-size: 3rem;}
+.arti2 p { margin-top: 4rem;font-size: 1rem;}
 
 /* skill */
 .skill-container { width:100%;height:700px; display: flex; flex-direction: column;justify-content:center;margin-top: 10%;margin-bottom:10%; box-sizing: border-box; color:white}
 .skill_flex { align-content:center;display:flex;flex-direction:column;justify-content:center;width:70%;height: auto;
     margin-left:15%; color: #fff;}
 .skill_header { font-size:3rem;text-align:center;height: 100px;margin-bottom:50px;}
-.bar_flex { display: flex;flex-direction:row;justify-content:center;height: auto;padding:5px;}
+.bar_flex { display: flex;flex-direction:row;justify-content:center;height: auto;padding:5px;flex-wrap: wrap;}
 .skill_name { flex:13%;height:20px; font-size:0.8rem;font-weight:600;text-align: center ; background:#FE2E64;}
-.bar_fill { display: flex;flex-direction:row;width:100%;height:20px;color:#fff;background-color:#01DFD7;}
+.bar_fill { display: flex;flex-direction:row;width:70%;height:20px;color:#fff;background-color:#01DFD7;}
 .bar_fill div { flex:25%;border-right: 0.5px solid #000;}
 .skill_level { height:20px;background-color:#D8D8D8}
 .level { flex:5%;font-size: 0.8rem;height:20px;text-align:center;}
 
 /* Project */
-.project-container { width:100%;height:600px; display:flex;flex-direction:column;justify-content:center;margin-top:10%;margin-bottom:10%; }
+.project-container { width:100%;height:600px; display:flex;flex-direction:column;justify-content:center;flex-wrap: wrap;margin-top:10%;margin-bottom:10%; }
 .project-flex { display:flex;flex-direction:column;justify-content:center;width:70%;color:#FFF;margin-left:15%;}
 .project-header { font-size:3rem;text-align:center;height: 100px;margin-bottom:50px; }
-.project-flex-row { display:flex;flex-direction:row;justify-content:center;margin: 5px 5px 10px 5px;}
+.project-flex-row { display:flex;flex-direction:row;justify-content:center;flex-wrap: wrap; margin: 5px 5px 10px 5px;}
 .project-image { flex:30%;padding-top:12px;}
 .project-content { flex:70%;}
 

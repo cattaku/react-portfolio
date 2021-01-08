@@ -5,16 +5,17 @@ import './footer.css'
 function Footer() {
     return (
         <div className="footer">
-            <ul className="footer_icon">
-                <li>
-                    <a href="https://github.com/cattaku">
+            <div className="footer_icon">
+                
+                <div className="email">
+                    <span>cattaku0@gmail.com</span>
+                </div>
+                <div className="github">
+                    <a href="https://github.com/cattaku" target="_blank">
                         <GithubOutlined style={{color:'#F2F2F2', fontSize:'3.5rem', lineWidth:'0.1rem'}}/>
                     </a>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                </div>
+            </div>
         </div>
     )
 }

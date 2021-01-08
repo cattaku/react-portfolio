@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import MovieApp from '../../../resources/images/movie-app.PNG'
 import Cgv from '../../../resources/images/cgv.png'
 import Fewm from '../../../resources/images/fewm.png'
 
+import AOS from 'aos'
+import "aos/dist/aos.css" 
+
+
 
 function ProjectPage() {
+
+    useEffect(() => {
+        AOS.init({
+            duration:3000
+        });
+    }, [])
+
+    
     return (
         
         <div className="project-flex"> 
@@ -12,7 +24,7 @@ function ProjectPage() {
                 <span style={{color:'#FE2E64'}}>P</span><span>rojects</span>
             </div>
 
-            <div className="project-flex-row">
+            <div className="project-flex-row"  data-aos="slide-up">
                 <div className="project-image">
                     <img src={MovieApp} style={{width:'280px', height:'200px'}}></img>
                 </div>
@@ -20,7 +32,7 @@ function ProjectPage() {
                     <p style={{fontSize:'1.5rem', fontWeight:'bold',color:'#01DFD7'}}>React Movie App</p>
                     <span>
                         개발기간 : 2020.12.23 ~ 2021년 1월 3일
-                        movieDB API를 이용하여 Reactjs + Redex + Nodejs + Express + MongDB와 연동하여 구현함
+                        movieDB API를 이용하여 Reactjs + Redex + Nodejs + Express + AntDesign + MongDB와 연동하여 구현함
                         현재까지 로그인, 최신 tv 리스트, 영화리스트, 검색, 좋아요 기능이 구현되어 있음.
                     </span>
                     <p>
@@ -31,7 +43,7 @@ function ProjectPage() {
                 </div>
             </div>
 
-            <div className="project-flex-row">
+            <div className="project-flex-row" data-aos="slide-up">
                 <div className="project-image">
                     <img src={Cgv} style={{width:'280px', height:'190px'}}></img>
                 </div>
@@ -46,7 +58,7 @@ function ProjectPage() {
                 </div>
             </div>
 
-            <div className="project-flex-row">
+            <div className="project-flex-row" data-aos="slide-up">
                 <div className="project-image">
                     <img src={Fewm} style={{width:'280px', height:'190px'}}></img>
                 </div>

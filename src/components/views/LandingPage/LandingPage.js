@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 import "../LandingPage/main.css"
 import  MainImage  from '../../../resources/images/1600_844.jpg'
 import Typist from 'react-typist'
+
 import NavBar from '../nav/NavBar'
 import AboutPage from './AboutPage'
 import Footer from '../footer/Footer';
@@ -33,8 +34,8 @@ function LandingPage() {
                 </Typist>
                 </div>
             </section>
-
-            <div className="about-container" id="aboutContainer">
+            
+            <div className="about-container" id="aboutContainer">   
                 <AboutPage/>
             </div>
             
@@ -44,6 +45,9 @@ function LandingPage() {
             
             <div className="project-container" id="projectContainer">
                 <ProjectPage/>
+            </div>
+            <div className="footer_container" id="footer">
+                <Footer/>
             </div>
             
         </div>
